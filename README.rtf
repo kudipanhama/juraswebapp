@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Introdu\'e7\'e3o:\
+Juras? \'e9 uma plataforma que permite ao cliente simular e comparar as diversas ofertas de investimento no mercado Angolano. O objectivo \'e9 criar uma web app que, no princ\'edpio, o cliente pode comparar as diversas ofertas de juros poss\'edveis nos bancos comerciais angolanos dependendo do prazo das taxas de juros. Ap\'f3s isso, ir\'e1 olhar para outras alternativas de investimento como fundos, obriga\'e7\'f5es e bilhetes.\
+\
+HLD:\
+\
+Client picks investment type \'97> Client picks savings period \'97> Client enters investment amount \'97> Client receives return investment as well as full information such as app. for adding to savings account, period, conditions, etc.\
+\
+Possible extensions:\
+\
+- Connect to bank/ investment provider directly to access investment, thru phone and later directly thru web app\
+\
+- Suggest similar or better investments and display appropriate risk levels for the client\
+\
+***\
+\
+Necessary core logic for Savings accounts\
+\
+Main equation for savings calc: Juros Brutos = (Capital * TANB * Prazo) / 365 dias ANO\
+\
+	INPUTS=\
+		Capital:\
+			Collection Method: user-inputted variable\
+			Data Type: float\
+		TANB:\
+			Collection Method: system variable \
+			Data Type: float\
+		Prazo:\
+			Collection Method: system constant\
+			Data Type: int\
+\
+	RETURNS=\
+		Juros Brutos:\
+			Data Type: float		\
+\
+***\
+\
+Secondary equation for tax calc: Juros L\'edquidos = [Juros Brutos - (Juros Brutos * TAC)] OU Juros Brutos * (1 - TAC) = Juros L\'edquidos\
+\
+	INPUTS=\
+		Juros Brutos:\
+			Collection Method: user-generated variable\
+			Data Type: float\
+		Taxa de Aplica\'e7\'e3o de Capitais:\
+			Collection Method: system variable\
+			Data Type: float\
+\
+	RETURNS=\
+		Juros L\'edquidos:\
+			Data Type: float\
+\
+Other Relevant Info:\
+\
+- Condi\'e7\'f5es de Acesso\
+- Condi\'e7\'f5es de Resgate Antecipado\
+- Condi\'e7\'f5es de Refor\'e7os\
+- Forma de Pagamento de Juros (Com ou Sem Capitaliza\'e7\'e3o)\
+- Renova\'e7\'f5es (Autom\'e1ticas ou N\'e3o Autom\'e1ticas)\
+- Risco da Institui\'e7\'e3o Financeira\
+\
+\
+\
+***\
+Banking Sector\
+\
+N\'ba of Commercial Banks: 26\
+N\'ba of Saving Account types in main banks: 2 - 4\
+\
+\
+\
+\
+***\
+EXTENSIONS:\
+\
+\
+\
+\
+\
+\
+\
+}
